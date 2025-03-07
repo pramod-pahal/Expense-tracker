@@ -1,0 +1,262 @@
+/* General Styling for Dark Mode */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Dark background color */
+  color: #e0e0e0; /* Light text for contrast */
+  min-height: 100vh;
+}
+
+/* Header Section */
+header {
+  height: 120px;
+  color: #fff;
+  padding: 2%;
+  margin: 0;
+  text-align: center;
+}
+
+.header-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 20px 20px;
+  backdrop-filter: blur(8px);
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffffff; /* Bright white text for header */
+  letter-spacing: 2px;
+}
+
+/* Form Styling */
+#input-section {
+  background-color: #1e1e1e; /* Dark form background */
+  color: #e0e0e0; /* Light text color */
+  padding: 40px;
+  border-radius: 15px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); /* Darker shadow */
+}
+
+#input-section h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #e0e0e0;
+  margin-bottom: 20px;
+}
+
+#expense-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+#expense-form label {
+  font-size: 15px;
+  font-weight: 500;
+  color: #b3b3b3; /* Lighter gray for labels */
+  margin-bottom: 5px;
+}
+
+#expense-form input,
+#expense-form select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #555; /* Darker border for inputs */
+  background-color: #2c2c2c; /* Dark input background */
+  color: #e0e0e0; /* Light text in input fields */
+}
+
+#date {
+  width: 100%; /* Reduced width for the date input */
+  max-width: 300px;
+}
+
+/* Button Styling */
+#expense-form button {
+  width: 100%;
+  padding: 15px;
+  background-color: #ff6347; /* Bright button color to stand out */
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#expense-form button:hover {
+  background-color: #ff4500; /* Darker hover state */
+}
+
+/* Expense List Styling */
+#expense-list {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+#expense-list h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e0e0e0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+table th,
+table td {
+  padding: 12px;
+  border-bottom: 1px solid #333; /* Dark border for table rows */
+}
+
+table th {
+  background-color: #2c2c2c; /* Darker table header background */
+  color: #e0e0e0;
+  font-weight: bold;
+}
+
+table td {
+  color: #e0e0e0;
+}
+
+table tr:hover {
+  background-color: rgba(255, 99, 132, 0.2); /* Light red hover effect */
+}
+
+/* Spending Pattern Chart */
+#spending-pattern {
+  background-color: #1e1e1e;
+  padding: 40px;
+  border-radius: 15px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+#spending-pattern h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e0e0e0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#chart-container {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+canvas {
+  width: 100%;
+  max-width: 700px;
+  height: 400px;
+}
+
+/* footer css */
+
+/* Footer Styling */
+
+.footer-section h3 i {
+  color: #ff6347; /* Accent color for icons */
+  margin-right: 8px;
+}
+
+.footer-section ul li i {
+  color: #ff6347; /* Accent color for list icons */
+  margin-right: 8px;
+}
+
+footer {
+  background-color: #1e1e1e; /* Dark background */
+  color: #e0e0e0; /* Light text color */
+  padding: 40px 20px;
+  text-align: left;
+  position: relative;
+  width: 97%;
+  box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  color: #ff6347; /* Accent color for section headings */
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.8;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: #ff6347; /* Accent color for links */
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: #ff4500; /* Darker hover color */
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+  color: #b3b3b3;
+}

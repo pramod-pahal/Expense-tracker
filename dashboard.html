@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="dashboard.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- google font link for stykeing purpose -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- animated icon  here we use font awesome for animated icon  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div data-aos="fade-up">
+        <div class="header-background"></div>
+        <div class="header-content">
+          <h1>Expense Tracker</h1>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- New expense section  -->
+
+      <section id="main-content">
+        <section id="input-section">
+          <h2>Add New Expense</h2>
+          <form id="expense-form">
+            <label for="date">Date:</label>
+            <input type="date" id="date" required />
+            <label for="category">Category:</label>
+            <!-- category -->
+            <select id="category" class="Category">
+              <option value="">Select a category</option>
+              <option value="Food">Food</option>
+              <option value="Transportation">Transportation</option>
+              <option value="Housing">Housing</option>
+              <option value="Entertainment">Entertainment</option>
+              <option value="Other">Other</option>
+            </select>
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" required />
+            <button type="submit">Add Expense</button>
+          </form>
+        </section>
+
+        <!-- second section -->
+        <section id="expense-list">
+          <h2>Expenses</h2>
+          <ul id="expense-list-ul"></ul>
+        </section>
+        <!-- Add a new section for spending pattern -->
+        <section id="spending-pattern">
+          <h2>Spending Pattern</h2>
+          <div id="chart-container">
+            <canvas
+              id="spending-pattern-chart"
+              width="800"
+              height="400"
+            ></canvas>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <!-- Section 1: About the App with an animated icon -->
+        <div class="footer-section">
+          <h3><i class="fas fa-chart-line"></i> About Expense Tracker</h3>
+          <p>
+            A simple, intuitive app to track your daily expenses and analyze
+            spending patterns.
+          </p>
+        </div>
+
+        <!-- Section 2: Contact Us with an animated icon -->
+        <div class="footer-section">
+          <h3><i class="fas fa-envelope"></i> Contact Us</h3>
+          <p>Email: akhileshmandawganeofficial@gmail.com</p>
+          <p>Phone: +91 96892 28469</p>
+        </div>
+
+        <!-- Section 3: Other Apps with an animated icon -->
+        <div class="footer-section">
+          <h3><i class="fas fa-mobile-alt"></i> Our Other Apps</h3>
+          <ul>
+            <li>
+              <a href="#"><i class="fas fa-calculator"></i> Budget Planner</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-piggy-bank"></i> Savings Calculator</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-chart-pie"></i> Investment Tracker</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- end the footer   -->
+
+    <!-- JS for animation and etc  -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="dashboard.js"></script>
+  </body>
+</html>
